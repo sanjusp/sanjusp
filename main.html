@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Reverser</title>
+    <script>
+        function reverseWord() {
+            // Get the input value from the text box
+            var inputWord = document.getElementById("inputWord").value;
+            
+            // Reverse the input word
+            var reversedWord = inputWord.split('').reverse().join('');
+            
+            // Display the reversed word
+            document.getElementById("reversedWord").textContent = reversedWord;
+        }
+    </script>
+</head>
+<body>
+    <h1>Word Reverser</h1>
+    <input type="text" id="inputWord" placeholder="Enter a word">
+    <button onclick="reverseWord()">Reverse</button>
+    <p>Reversed Word: <span id="reversedWord"></span></p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <label for="demo">Enter your your name</label>
+        <input type="text" id="demo" placeholder="Your Name">
+
+        <button onclick="namedisplay()">Go!</button>
+        <script>
+                function namedisplay()
+                {
+                    var names= document.getElementById("demo").value;
+                    names=names.toUpperCase();
+                    document.getElementById("name").textContent=names;
+                }
+        </script>
+        <p>Name : <span id="name"></span></p>
+    </body>
+</html>
